@@ -1,0 +1,10 @@
+<div class="code">
+  <%= form_tag '/run' do %>
+    <textarea name="code" type="textarea"><%= @code %></textarea>
+    <button type="button submit" class="run-btn btn btn-outline-dark">Run</button>
+  <% end %>
+</div>
+
+<div class="result">
+  <pre><%= @text %></pre>
+</div>
